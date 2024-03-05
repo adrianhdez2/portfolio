@@ -1,0 +1,36 @@
+---
+import ContainerSection from "./ContainerSection.astro";
+import File from "./icons/File.astro";
+import Github from "./icons/Github.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Email from "./icons/Email.astro";
+---
+
+<ContainerSection class="py-16 md:py-36">
+    <img
+        src="/img/profile.jpg"
+        alt="Logo AdrianHdez"
+        class="size-12 rounded-full sm:hidden block mb-4"
+    />
+    <h1 class="text-xl md:text-4xl mb-3">Hey!, Soy Adrián Hdez</h1>
+    <h2 class="text-xs md:text-sm w-full md:w-3/4 text-pretty">
+        Aqui redacto la experiencia que no se que poner la verdad, pero mientras
+        pondre que llevo un año y algo dedicado al desarrollo Web, siendo un
+        frontend, que maneja html, css, javascript, tailwind css y porquito mas.
+    </h2>
+    <nav class="w-full mt-3 flex flex-row items-center space-x-3">
+        <a href="" class="flex flex-row px-2 py-1 rounded-2xl bg-perso items-center justify-center space-x-1 hover:bg-perso-hover transition">
+            <File class="size-4 fill-[#1E1E1E]"/>
+            <span class="uppercase text-[#1E1E1E] text-sm font-bold">CV</span>
+        </a>
+        <a href="https://www.linkedin.com/in/adrianh2/" target="_blank">
+            <Linkedin class="size-6 fill-perso hover:fill-perso-hover transition"/>
+        </a>
+        <a href="https://github.com/adrianhdez2" target="_blank">
+            <Github class="size-6 fill-perso hover:fill-perso-hover transition"/>
+        </a>
+        <a href="mailto:cesarahh3@gmail.com">
+            <Email class="size-6 fill-perso hover:fill-perso-hover transition"/>
+        </a>
+    </nav>
+</ContainerSection>

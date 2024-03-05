@@ -1,0 +1,8 @@
+---
+const { href } = Astro.props;
+const isActive = href === Astro.url.hash;
+---
+
+<a href={href} class="hover:text-perso transition sm:text-sm text-xs">
+    <slot />
+</a>
