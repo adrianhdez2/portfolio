@@ -15,37 +15,37 @@ import Link from "./icons/Link.astro";
 const TAGS = {
     ASTRO: {
         name: "Astro",
-        class: "bg-[#003159] text-white",
+        class: "bg-violet-800 text-white",
         icon: AstroIcon,
     },
     BOOTSTRAP: {
         name: "Bootstrap",
-        class: "bg-[#003159] text-white",
+        class: "bg-violet-900 text-white",
         icon: Bootstrap,
     },
     CSS: {
         name: "CSS",
-        class: "",
+        class: "bg-sky-800 text-white",
         icon: Css,
     },
     HTML: {
         name: "HTML",
-        class: "",
+        class: "bg-orange-700 text-white",
         icon: Html,
     },
     JAVASCRIPT: {
         name: "JavaScript",
-        class: "",
+        class: "bg-yellow-700 text-white",
         icon: Javascript,
     },
     PHP: {
         name: "PHP",
-        class: "",
+        class: "bg-sky-900 text-white",
         icon: Php,
     },
     REACT: {
         name: "React",
-        class: "",
+        class: "bg-sky-800 text-white",
         icon: React,
     },
     TAILWIND: {
@@ -74,6 +74,7 @@ const PROJECTS = [
     {
         title: "E-commerce Veterinaria",
         description: "",
+        link: "https://veterinarialvl.000webhostapp.com/",
         image: "/img/thumbnails/veterinaria.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.PHP],
     },
@@ -164,7 +165,7 @@ const PROJECTS = [
                                 {title}
                             </h3>
                             <div class="flex flex-wrap mt-2">
-                                <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
+                                <ul class="flex flex-row mb-2 gap-x-2 gap-y-2 flex-wrap">
                                     {tags.map((tag) => (
                                         <li>
                                             <span
@@ -184,7 +185,7 @@ const PROJECTS = [
                                     {github && (
                                         <a
                                             href={github}
-                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-orange-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                                         >
                                             <Github class="size-6" />
                                             Code
@@ -193,7 +194,7 @@ const PROJECTS = [
                                     {link && (
                                         <a
                                             href={link}
-                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-orange-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
                                         >
                                             <Link class="size-4" />
                                             Preview
