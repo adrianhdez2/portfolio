@@ -1,0 +1,210 @@
+---
+import ContainerSection from "./ContainerSection.astro";
+import CodeIcon from "./icons/Code.astro";
+import AstroIcon from "./icons/AstroIcon.astro";
+import Bootstrap from "./icons/Bootstrap.astro";
+import Css from "./icons/Css.astro";
+import Html from "./icons/Html.astro";
+import Javascript from "./icons/Javascript.astro";
+import Php from "./icons/Php.astro";
+import React from "./icons/React.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Github from "./icons/Github.astro";
+import Link from "./icons/Link.astro";
+
+const TAGS = {
+    ASTRO: {
+        name: "Astro",
+        class: "bg-[#003159] text-white",
+        icon: AstroIcon,
+    },
+    BOOTSTRAP: {
+        name: "Bootstrap",
+        class: "bg-[#003159] text-white",
+        icon: Bootstrap,
+    },
+    CSS: {
+        name: "CSS",
+        class: "",
+        icon: Css,
+    },
+    HTML: {
+        name: "HTML",
+        class: "",
+        icon: Html,
+    },
+    JAVASCRIPT: {
+        name: "JavaScript",
+        class: "",
+        icon: Javascript,
+    },
+    PHP: {
+        name: "PHP",
+        class: "",
+        icon: Php,
+    },
+    REACT: {
+        name: "React",
+        class: "",
+        icon: React,
+    },
+    TAILWIND: {
+        name: "Tailwind CSS",
+        class: "bg-[#003159] text-white",
+        icon: Tailwind,
+    },
+};
+
+const PROJECTS = [
+    {
+        title: "Web PescArte",
+        description: "",
+        link: "https://pescarte.ujat.mx/",
+        image: "/img/thumbnails/pescarte.webp",
+        tags: [TAGS.HTML, TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT],
+    },
+    {
+        title: "Calculadora",
+        description: "",
+        link: "https://adrianhdez2.github.io/calculadora/",
+        github: "https://github.com/adrianhdez2/calculadora",
+        image: "/img/thumbnails/calculadora.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "E-commerce Veterinaria",
+        description: "",
+        image: "/img/thumbnails/veterinaria.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.PHP],
+    },
+    {
+        title: "Pokémon Game",
+        description: "",
+        link: "https://adrianhdez2.github.io/pokemonGame/",
+        github: "https://github.com/adrianhdez2/pokemonGame",
+        image: "/img/thumbnails/pokemon.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "TODO List",
+        description: "",
+        link: "https://adrianhdez2.github.io/TODO-list/",
+        github: "https://github.com/adrianhdez2/TODO-list",
+        image: "/img/thumbnails/TODO.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Memory Game",
+        description: "",
+        link: "https://adrianhdez2.github.io/memorama/",
+        github: "https://github.com/adrianhdez2/memorama",
+        image: "/img/thumbnails/memory.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Tic Tac Toe",
+        description: "",
+        link: "https://adrianhdez2.github.io/tictactoe/",
+        github: "https://github.com/adrianhdez2/tictactoe",
+        image: "/img/thumbnails/tic-tac-toe.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Rock Paper Scissors",
+        description: "",
+        link: "https://adrianhdez2.github.io/scissors/",
+        github: "https://github.com/adrianhdez2/scissors",
+        image: "/img/thumbnails/r-p-s.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Drag list",
+        description: "",
+        link: "https://adrianhdez2.github.io/drag/",
+        github: "https://github.com/adrianhdez2/drag",
+        image: "/img/thumbnails/drag.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Digital Clock",
+        description: "",
+        link: "https://adrianhdez2.github.io/Reloj/",
+        github: "https://github.com/adrianhdez2/Reloj",
+        image: "/img/thumbnails/clock.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+];
+---
+
+<ContainerSection id="projects" class="">
+    <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+    >
+        <CodeIcon class="size-7 fill-perso" />
+        Proyectos
+    </h2>
+    <section class="flex flex-col gap-y-16">
+        {
+            PROJECTS.map(
+                ({ image, title, description, tags, link, github }) => (
+                    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+                        <div class="w-full md:w-1/2">
+                            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                                <img
+                                    alt="Recién llegado vs 5 años en Nueva Zelanda"
+                                    class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                                    loading="lazy"
+                                    src={image}
+                                />
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/2 md:max-w-lg">
+                            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                                {title}
+                            </h3>
+                            <div class="flex flex-wrap mt-2">
+                                <ul class="flex flex-row mb-2 gap-x-2 flex-wrap">
+                                    {tags.map((tag) => (
+                                        <li>
+                                            <span
+                                                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                                            >
+                                                <tag.icon class="size-4" />
+                                                {tag.name}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <div class="mt-2 text-gray-700 dark:text-gray-400">
+                                    {description}
+                                </div>
+                                <footer class="flex items-end justify-start mt-4 gap-x-4">
+                                    {github && (
+                                        <a
+                                            href={github}
+                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                                        >
+                                            <Github class="size-6" />
+                                            Code
+                                        </a>
+                                    )}
+                                    {link && (
+                                        <a
+                                            href={link}
+                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                                        >
+                                            <Link class="size-4" />
+                                            Preview
+                                        </a>
+                                    )}
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                ),
+            )
+        }
+    </section>
+</ContainerSection>
