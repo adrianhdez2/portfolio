@@ -1,5 +1,6 @@
 ---
 import ContainerSection from "./ContainerSection.astro";
+import Link from "./Link.astro";
 import CodeIcon from "./icons/Code.astro";
 import AstroIcon from "./icons/AstroIcon.astro";
 import Bootstrap from "./icons/Bootstrap.astro";
@@ -10,7 +11,7 @@ import Php from "./icons/Php.astro";
 import React from "./icons/React.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import Github from "./icons/Github.astro";
-import Link from "./icons/Link.astro";
+import LinkIcon from "./icons/Link.astro";
 
 const TAGS = {
     ASTRO: {
@@ -61,7 +62,13 @@ const PROJECTS = [
         description: "",
         link: "https://pescarte.ujat.mx/",
         image: "/img/thumbnails/pescarte.webp",
-        tags: [TAGS.HTML, TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT, TAGS.REACT],
+        tags: [
+            TAGS.HTML,
+            TAGS.ASTRO,
+            TAGS.TAILWIND,
+            TAGS.JAVASCRIPT,
+            TAGS.REACT,
+        ],
     },
     {
         title: "Calculadora",
@@ -183,22 +190,16 @@ const PROJECTS = [
                                 </div>
                                 <footer class="flex items-end justify-start mt-4 gap-x-4 ">
                                     {github && (
-                                        <a
-                                            href={github}
-                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-orange-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
-                                        >
+                                        <Link href={github}>
                                             <Github class="size-6 fill-white" />
                                             Code
-                                        </a>
+                                        </Link>
                                     )}
                                     {link && (
-                                        <a
-                                            href={link}
-                                            class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-white transition bg-gray-800 border border-gray-600 focus-visible:ring-orange-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
-                                        >
-                                            <Link class="size-4" />
+                                        <Link href={link}>
+                                            <LinkIcon class="size-4" />
                                             Preview
-                                        </a>
+                                        </Link>
                                     )}
                                 </footer>
                             </div>

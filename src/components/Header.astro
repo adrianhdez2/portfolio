@@ -1,5 +1,23 @@
 ---
-import Link from "./Link.astro";
+
+const LINKS = [
+    {
+        name: "Experiencia",
+        path: "#experience",
+    },
+    {
+        name: "Proyectos",
+        path: "#projects",
+    },
+    {
+        name: "Sobre mí",
+        path: "#about-me",
+    },
+    {
+        name: "Contacto",
+        path: "#contac",
+    },
+];
 ---
 
 <header
@@ -10,10 +28,18 @@ import Link from "./Link.astro";
         alt="Logo AdrianHdez"
         class="size-12 rounded-full hidden sm:block"
     />
-    <nav class="flex text-sm font-medium rounded-full justify-center items-center">
-        <Link href="#experience">Experiencia</Link>
-        <Link href="#projects">Proyectos</Link>
-        <Link href="#about-me">Sobre mí</Link>
-        <Link href="#contact">Contacto</Link>
+    <nav
+        class="flex text-sm font-medium rounded-full justify-center items-center"
+    >
+        {
+            LINKS.map(({ name, path }) => (
+                <a
+                    href={path}
+                    class="hover:text-perso dark:hover:text-perso transition relative block px-2 py-2"
+                >
+                    {name}
+                </a>
+            ))
+        }
     </nav>
 </header>
