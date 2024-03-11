@@ -1,9 +1,29 @@
 ---
 import ContainerSection from "./ContainerSection.astro";
 import File from "./icons/File.astro";
-import Github from "./icons/Github.astro";
 import Linkedin from "./icons/Linkedin.astro";
 import Email from "./icons/Email.astro";
+
+const HREF = [
+    {
+        title: "Mi CV",
+        class: "size-3",
+        path: "",
+        icon: File,
+    },
+    {
+        title: "LinkedIn",
+        class: "size-3",
+        path: "https://www.linkedin.com/in/adrianh2/",
+        icon: Linkedin,
+    },
+    {
+        title: "Contáctame",
+        class: "size-3",
+        path: "mailto:cesarahh3@gmail.com",
+        icon: Email,
+    },
+];
 ---
 
 <ContainerSection class="py-16 md:py-36">
@@ -17,35 +37,24 @@ import Email from "./icons/Email.astro";
     >
         Hey, soy Adrián Hdez
     </h1>
-    <p
-        class="mt-6 text-xl text-gray-800 dark:text-gray-300"
-    >
+    <p class="mt-6 text-xl text-gray-800 dark:text-gray-300">
         Aqui redacto la experiencia que no se que poner la verdad, pero mientras
         pondre que llevo un año y algo dedicado al desarrollo Web, siendo un
         frontend, que maneja html, css, javascript, tailwind css y porquito mas.
     </p>
-    <nav class="w-full mt-3 flex flex-row items-center space-x-3">
-        <a
-            href=""
-            class="flex flex-row px-2 py-1 rounded-2xl bg-perso items-center justify-center space-x-1 hover:bg-perso-hover transition"
-        >
-            <File class="size-4 fill-[#1E1E1E]" />
-            <span class="uppercase text-[#1E1E1E] text-sm font-bold">CV</span>
-        </a>
-        <a href="https://www.linkedin.com/in/adrianh2/" target="_blank">
-            <Linkedin
-                class="size-6 fill-perso hover:fill-perso-hover transition"
-            />
-        </a>
-        <a href="https://github.com/adrianhdez2" target="_blank">
-            <Github
-                class="size-6 fill-perso hover:fill-perso-hover transition"
-            />
-        </a>
-        <a href="mailto:cesarahh3@gmail.com">
-            <Email
-                class="size-6 fill-perso hover:fill-perso-hover transition"
-            />
-        </a>
+    <nav class="w-full mt-3 flex flex-row items-center space-x-2">
+        {
+            HREF.map((item) => (
+                <a
+                    href={item.path}
+                    class="flex flex-row px-3 py-1 rounded-2xl bg-white/10 hover:bg-gray-600 items-center justify-center space-x-2 transition border border-gray-300 dark:border-gray-600 hover:border-gray-700"
+                >
+                    <item.icon class={`fill-white/70 ${item.class}`} />
+                    <span class="text-white/70 text-xs font-normal ">
+                        {item.title}
+                    </span>
+                </a>
+            ))
+        }
     </nav>
 </ContainerSection>

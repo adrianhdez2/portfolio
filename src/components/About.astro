@@ -1,0 +1,44 @@
+---
+import ContainerSection from "./ContainerSection.astro";
+import Me from "./icons/Me.astro";
+---
+
+<ContainerSection id="about-me" class="my-16">
+    <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+    >
+        <Me class="size-7 fill-perso" />
+        Sobre mí
+    </h2>
+    <article
+        class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+    >
+        <img
+            width="200"
+            height="200"
+            src="/img/profile.jpg"
+            alt="Adrián Hdez"
+            class="object-cover w-64 h-full p-1 lg:p-2 lg:w-64 aspect-square -rotate-3 rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+        />
+        <div class="[&>p]:mb-4 text-pretty">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis voluptatibus similique dolor repellendus, pariatur
+                possimus sint sit assumenda fuga, ipsa quod distinctio placeat
+                reprehenderit expedita aut commodi. Impedit, nisi soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis voluptatibus similique dolor repellendus, pariatur
+                possimus sint sit assumenda fuga, ipsa quod distinctio placeat
+                reprehenderit expedita aut commodi. Impedit, nisi soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Blanditiis voluptatibus similique dolor repellendus, pariatur
+                possimus sint sit assumenda fuga, ipsa quod distinctio placeat
+                reprehenderit expedita aut commodi. Impedit, nisi soluta.
+            </p>
+        </div>
+    </article>
+</ContainerSection>
