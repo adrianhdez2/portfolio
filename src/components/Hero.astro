@@ -47,10 +47,10 @@ const HREF = [
             HREF.map((item) => (
                 <a
                     href={item.path}
-                    class="flex flex-row px-3 py-1 rounded-2xl bg-white/10 hover:bg-gray-600 items-center justify-center space-x-2 transition border border-gray-300 dark:border-gray-600 hover:border-gray-700"
+                    class="flex flex-row px-3 py-1 rounded-2xl bg-white/10 hover:bg-gray-600 items-center justify-center space-x-2 transition border border-gray-300 dark:border-gray-600 hover:border-gray-700 group"
                 >
-                    <item.icon class={`fill-white/70 ${item.class}`} />
-                    <span class="text-white/70 text-xs font-normal ">
+                    <item.icon class={`dark:fill-white/70  fill-gray-800 ${item.class} group-hover:fill-white/70`} />
+                    <span class="dark:text-white/70 text-xs font-normal text-gray-800 hover:text-white/70">
                         {item.title}
                     </span>
                 </a>
