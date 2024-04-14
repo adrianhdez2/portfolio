@@ -38,9 +38,13 @@ const HREF = [
         Hey, soy Adrián Hdez
     </h1>
     <p class="mt-6 text-xl text-gray-800 dark:text-gray-300">
-        Aqui redacto la experiencia que no se que poner la verdad, pero mientras
-        pondre que llevo un año y algo dedicado al desarrollo Web, siendo un
-        frontend, que maneja html, css, javascript, tailwind css y porquito mas.
+        Cerca de dos años de experiencia como desarrollador frontend, me
+        especializo en crear experiencias de usuario intuitivas y atractivas
+        utilizando tecnologías como HTML, CSS, y JavaScript. También tengo
+        experiencia en frameworks como React.js y Astro, y habilidades en el uso
+        de frameworks CSS como Tailwind y Bootstrap. Siempre estoy buscando
+        nuevas formas de mejorar y contribuir al éxito de proyectos emocionantes
+        en el futuro.
     </p>
     <nav class="w-full mt-3 flex flex-row items-center space-x-2">
         {
@@ -49,7 +53,9 @@ const HREF = [
                     href={item.path}
                     class="flex flex-row px-3 py-1 rounded-2xl bg-white/10 hover:bg-gray-600 items-center justify-center space-x-2 transition border border-gray-300 dark:border-gray-600 hover:border-gray-700 group"
                 >
-                    <item.icon class={`dark:fill-white/70  fill-gray-800 ${item.class} group-hover:fill-white/70`} />
+                    <item.icon
+                        class={`dark:fill-white/70  fill-gray-800 ${item.class} group-hover:fill-white/70`}
+                    />
                     <span class="dark:text-white/70 text-xs font-normal text-gray-800 hover:text-white/70">
                         {item.title}
                     </span>
