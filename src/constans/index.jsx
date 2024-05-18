@@ -77,6 +77,14 @@ export const PROJECTS = [
         ],
     },
     {
+        title: "Hangman Game",
+        description: "",
+        link: "https://adrianhdez2.github.io/hangman-game/",
+        github: "https://github.com/adrianhdez2/hangman-game",
+        image: "/img/thumbnails/ahorcado.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
+    },
+    {
         title: "Shopping Cart",
         description: "",
         link: "https://shopping-cart-steel-mu.vercel.app/",
