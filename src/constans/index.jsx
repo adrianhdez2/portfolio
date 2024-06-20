@@ -66,7 +66,7 @@ export const PROJECTS = [
     },
     {
         title: "Quiz App",
-        description: "Peuqeño quiz acerca de la banda Imagine Dragons, realizado en JavaScript, con animaciones en CSS.",
+        description: "Pequeño quiz acerca de la banda Imagine Dragons, realizado en JavaScript, con animaciones en CSS.",
         link: "https://quiz-app-orpin-phi.vercel.app/",
         github: "https://github.com/adrianhdez2/quiz-app",
         image: "/img/thumbnails/app-quiz.webp",
