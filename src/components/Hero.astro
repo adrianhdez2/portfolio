@@ -1,29 +1,6 @@
 ---
 import ContainerSection from "./ContainerSection.astro";
-import File from "./icons/File.astro";
-import Linkedin from "./icons/Linkedin.astro";
-import Email from "./icons/Email.astro";
-
-const HREF = [
-    {
-        title: "Mi CV",
-        class: "size-3",
-        path: "",
-        icon: File,
-    },
-    {
-        title: "LinkedIn",
-        class: "size-3",
-        path: "https://www.linkedin.com/in/adrianh2/",
-        icon: Linkedin,
-    },
-    {
-        title: "Contáctame",
-        class: "size-3",
-        path: "mailto:cesarahh3@gmail.com",
-        icon: Email,
-    },
-];
+import { HREF } from "../constans/index";
 ---
 
 <ContainerSection class="py-16 md:py-36">
@@ -38,25 +15,26 @@ const HREF = [
         Hey, soy Adrián Hdez
     </h1>
     <p class="mt-6 text-xl text-gray-800 dark:text-gray-300">
-        2 años de experiencia como desarrollador frontend. Me
-        especializo en crear experiencias de usuario intuitivas y atractivas
-        utilizando tecnologías como HTML, CSS, y JavaScript. También tengo
-        experiencia en frameworks como React.js y Astro, y habilidades en el uso
-        de frameworks CSS como Tailwind y Bootstrap.
+        2 años de experiencia como desarrollador frontend. Me especializo en
+        crear experiencias de usuario intuitivas y atractivas utilizando
+        tecnologías como HTML, CSS, y JavaScript. También tengo experiencia en
+        frameworks como React.js y Astro, y habilidades en el uso de frameworks
+        CSS como Tailwind y Bootstrap.
     </p>
-    <nav class="w-full mt-3 flex flex-row items-center space-x-2">
+    <nav
+        class="w-full mt-6 flex flex-row flex-wrap justify-start items-start gap-2"
+    >
         {
             HREF.map((item) => (
                 <a
                     href={item.path}
-                    class="flex flex-row px-3 py-1 rounded-2xl bg-white/10 hover:bg-gray-600 items-center justify-center space-x-2 transition border border-gray-300 dark:border-gray-600 hover:border-gray-700 group"
+                    rel="noopener noreferrer"
+                    class="inline-flex px-4 py-1 rounded-2xl bg-white/10 hover:bg-black/70 hover:text-white dark:hover:bg-gray-600 items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 hover:border-gray-700 group transition-colors"
                 >
                     <item.icon
-                        class={`dark:fill-white/70  fill-gray-800 ${item.class} group-hover:fill-white/70`}
+                        class={`dark:stroke-white/70 stroke-gray-800 ${item.class} group-hover:stroke-white/70`}
                     />
-                    <span class="dark:text-white/70 text-xs font-normal text-gray-800 hover:text-white/70">
-                        {item.title}
-                    </span>
+                    {item.title}
                 </a>
             ))
         }

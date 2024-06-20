@@ -1,8 +1,11 @@
 import AstroIcon from "../components/icons/AstroIcon.astro";
 import Bootstrap from "../components/icons/Bootstrap.astro";
 import Css from "../components/icons/Css.astro";
+import Email from "../components/icons/Email.astro";
+import File from "../components/icons/File.astro";
 import Html from "../components/icons/Html.astro";
 import Javascript from "../components/icons/Javascript.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
 import Php from "../components/icons/Php.astro";
 import React from "../components/icons/React.astro";
 import Tailwind from "../components/icons/Tailwind.astro";
@@ -116,14 +119,7 @@ export const PROJECTS = [
         image: "/img/thumbnails/pokemon.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
-    {
-        title: "Calculadora",
-        description: "Calculadora básica elaborada con JavaScript, puede realizar operaciones como: suma, resta, multiplicacón y división.",
-        link: "https://adrianhdez2.github.io/calculadora/",
-        github: "https://github.com/adrianhdez2/calculadora",
-        image: "/img/thumbnails/calculadora.webp",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    },
+
     {
         title: "TODO List",
         description: "Lista TODO, empleando funciones en JavaScript como doble click y usando local storage.",
@@ -165,11 +161,107 @@ export const PROJECTS = [
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
     {
+        title: "Memorama (Juego) - UJAT",
+        description: "Juego clásico de memorana, empleando información relacionada a la Laguna de las Ilusiones, permitiendo así divulgación y concientización sobre su cuidado",
+        link: "https://laguna-ilusiones.ujat.mx/memorama-juego/index.html",
+        image: "/img/thumbnails/memorama-laguna.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
+    },
+    {
+        title: "Operación laguna (Juego) - UJAT",
+        description: "Juego de atrapar objetos hecho en JavaScript con el objetivo de concientizar sobre el cuidado de la Laguna de las Ilusiones.",
+        link: "https://laguna-ilusiones.ujat.mx/juego-cocodrilo/index.html",
+        image: "/img/thumbnails/operacion-laguna.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
+    },
+    {
         title: "Reloj Digital",
         description: "Reloj digital que muestra la hora y fecha actuales.",
         link: "https://adrianhdez2.github.io/Reloj/",
         github: "https://github.com/adrianhdez2/Reloj",
         image: "/img/thumbnails/clock.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+    {
+        title: "Calculadora",
+        description: "Calculadora básica elaborada con JavaScript, puede realizar operaciones como: suma, resta, multiplicacón y división.",
+        link: "https://adrianhdez2.github.io/calculadora/",
+        github: "https://github.com/adrianhdez2/calculadora",
+        image: "/img/thumbnails/calculadora.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+];
+
+export const EXPERIENCIE = [
+    {
+        date: "Actualmente...",
+        title: "Desarrollador Web",
+        company: "Universidad Juárez Autonóma de Tabasco",
+        description:
+            "Colaboro como desarrollador Web y de aplicaciones en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información",
+    },
+    {
+        date: "Diciembre 2023",
+        title: "Colaborador en la Casa Universitaria del Cacao y Chocolate",
+        company: "Universidad Juárez Autonóma de Tabasco",
+        description:
+            "Colaboré como parte del proyecto de desarrollo tecnológico, enfocándome en la creación y desarrollo de aplicaciones web y aplicaciones interactivas. Utilicé la biblioteca Leaflet para integrar mapas interactivos y el motor gráfico Unity con el lenguaje C# para las aplicaciones interactivas.",
+        link: "https://casa-cacao.ujat.mx/",
+    },
+    {
+        date: "Noviembre 2023",
+        title: "Prestador de Práctica Profesional",
+        company: "Universidad Juárez Autonóma de Tabasco",
+        description:
+            "Realicé mi práctica profesional durante 6 meses, finalizando en abril de 2024, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear una aplicación de realidad aumentada (RA) como parte del proyecto de la Laguna de las Ilusiones. Además, inicié mi participación en el proyecto de la Casa Universitaria del Cacao y Chocolate.",
+        link: "https://laguna-ilusiones.ujat.mx/app-ra2.html"
+    },
+    {
+        date: "Marzo 2023",
+        title: "Prestador de Servicio social",
+        company: "Universidad Juárez Autonóma de Tabasco",
+        description:
+            "Realicé mi servicio social durante 6 meses, finalizando en agosto de 2023, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear dos juegos Web utilizando JavaScript, como parte del proyecto de la Laguna de las Ilusiones.",
+        link: "https://laguna-ilusiones.ujat.mx/"
+    },
+];
+
+export const HREF = [
+    {
+        title: "Contáctame",
+        class: "size-4",
+        path: "mailto:cesarahh3@gmail.com",
+        icon: Email,
+    },
+    {
+        title: "Mi CV",
+        class: "size-4",
+        path: "",
+        icon: File,
+    },
+    {
+        title: "LinkedIn",
+        class: "size-4",
+        path: "https://www.linkedin.com/in/adrianh2/",
+        icon: Linkedin,
+    },
+];
+
+export const LINKS = [
+    {
+        name: "Experiencia",
+        path: "#experience",
+    },
+    {
+        name: "Proyectos",
+        path: "#projects",
+    },
+    {
+        name: "Sobre mí",
+        path: "#about-me",
+    },
+    {
+        name: "Contacto",
+        path: "mailto:cesarahh3@gmail.com",
     },
 ];
