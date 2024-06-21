@@ -22,7 +22,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body
-		class={`w-full h-full flex flex-col px-3 sm:px-4 ${page === "/social" && "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700"}`}
+		class={`w-full h-full flex flex-col px-3 sm:px-4 ${page === "/social" ? "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700" : ''}`}
 	>
 		<slot />
 	</body>
