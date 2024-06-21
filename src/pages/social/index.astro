@@ -1,0 +1,94 @@
+---
+import ContainerSection from "../../components/ContainerSection.astro";
+import Email from "../../components/icons/Email.astro";
+import File from "../../components/icons/File.astro";
+import Github from "../../components/icons/Github.astro";
+import Linkedin from "../../components/icons/Linkedin.astro";
+import Equis from "../../components/icons/Equis.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Mis Redes">
+    <ContainerSection id="social" class="flex items-center justify-center">
+        <article
+            class="w-full text-base h-full flex flex-col items-center justify-center pt-4 mt-10 gap-y-4"
+        >
+            <div class="w-full h-full flex items-center justify-center">
+                <div class="size-52 sm:size-56 relative">
+                    <img
+                        class="size-full aspect-square rounded-md"
+                        src="/img/profile.jpg"
+                        alt="Adrián Hdez"
+                    />
+                    <div
+                        class="absolute top-0 left-0 w-full h-full flex items-end justify-center gap-x-3 py-2 px-2"
+                    >
+                        <a
+                            href="https://github.com/adrianhdez2"
+                            class="inline-block bg-black p-1.5 rounded-full items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
+                        >
+                            <Github class="size-5 fill-white" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/adrianh2/"
+                            class="bg-black p-1.5 rounded-full flex items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
+                        >
+                            <Linkedin class="size-5 stroke-white stroke-1" />
+                        </a>
+                        <a
+                            href="https://twitter.com/AdrianH_2"
+                            class="bg-black p-1.5 rounded-full flex items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
+                        >
+                            <Equis class="size-5 fill-white" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-full h-full flex items-center justify-center text-center flex-col space-y-4"
+            >
+                <h3 class="text-xl text-center">
+                    César Adrián Hernández Hernández.
+                </h3>
+                <div
+                    class="inline-flex gap-2 flex-wrap items-center justify-center"
+                >
+                    <span
+                        class="inline gap-x-1 rounded-full text-xs bg-violet-800 text-white py-1 px-2"
+                        >Desarrollador frontend</span
+                    >
+                    <span
+                        class="inline gap-x-1 rounded-full text-xs bg-sky-800 text-white py-1 px-2"
+                        >Desarrollo de Apps</span
+                    >
+                </div>
+                <p>
+                    2 años de experiencia como desarrollador frontend. Me
+                    especializo en crear experiencias de usuario intuitivas y
+                    atractivas utilizando tecnologías como HTML, CSS, y
+                    JavaScript. También tengo experiencia en frameworks como
+                    React.js y Astro, y habilidades en el uso de frameworks CSS
+                    como Tailwind y Bootstrap.
+                </p>
+                <div
+                    class="inline-flex w-full items-center justify-center flex-wrap gap-2"
+                >
+                    <a
+                        href="mailto:cesarahh3@gmail.com"
+                        class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black dark:text-white transition dark:bg-gray-800 border border-gray-600 focus-visible:ring-slate-500/80 text-md hover:bg-gray-800 dark:hover:border-gray-950 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-1 active:bg-gray-800"
+                    >
+                        <Email class="size-5" />
+                        Contáctame
+                    </a>
+                    <a
+                        href=""
+                        class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black dark:text-white transition dark:bg-gray-800 border border-gray-600 focus-visible:ring-slate-500/80 text-md hover:bg-gray-800 dark:hover:border-gray-950 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-1 active:bg-gray-800"
+                    >
+                        <File class="size-5" />
+                        Descargar CV</a
+                    >
+                </div>
+            </div>
+        </article>
+    </ContainerSection>
+</Layout>

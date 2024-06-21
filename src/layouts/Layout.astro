@@ -4,6 +4,10 @@ interface Props {
 	title: string;
 }
 
+const page = Astro.url.pathname
+console.log(page);
+
+
 const { title } = Astro.props;
 ---
 
@@ -17,7 +21,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="w-full h-full flex flex-col px-3 sm:px-4">
+	<body class={`w-full h-full flex flex-col px-3 sm:px-4 ${page === "/social" && "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700"}`}>
 		<slot />
 	</body>
 </html>
