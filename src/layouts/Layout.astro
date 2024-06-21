@@ -3,7 +3,6 @@ import "@fontsource-variable/onest";
 interface Props {
 	title: string;
 	description: string;
-	canonical?: string;
 	image?: string;
 }
 
@@ -12,16 +11,8 @@ const { pathname } = Astro.url;
 const {
 	title,
 	description,
-	canonical,
 	image = "https://adrianhdez.tech/img/me.webp",
 } = Astro.props;
-
-const determineCanonicalURL = () => {
-	if (Astro.url.host.includes("localhost")) return "http://localhost:4321";
-	return canonical || Astro.url.pathname;
-};
-
-const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 ---
 
 <!doctype html>
@@ -32,7 +23,7 @@ const canonicalURL = new URL(determineCanonicalURL(), Astro.site);
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="canonical" href={canonicalURL} />
+		<link rel="canonical" href="https://adrianhdez.tech/" />
 		<meta name="keywords" content="programador developer dev development app web " />
 
 		<meta property="og:image" content={new URL(image, Astro.url)} />
