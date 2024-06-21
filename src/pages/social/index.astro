@@ -6,9 +6,13 @@ import Github from "../../components/icons/Github.astro";
 import Linkedin from "../../components/icons/Linkedin.astro";
 import Equis from "../../components/icons/Equis.astro";
 import Layout from "../../layouts/Layout.astro";
+import Book from "../../components/icons/Book.astro";
 ---
 
-<Layout title="Mis Redes">
+<Layout
+    title="Mis Redes"
+    description="Te invito a seguirme en mis redes sociales para que puedas seguirme y conocer de mi trabajo."
+>
     <ContainerSection id="social" class="flex items-center justify-center">
         <article
             class="w-full text-base h-full flex flex-col items-center justify-center pt-4 mt-10 gap-y-4"
@@ -73,6 +77,13 @@ import Layout from "../../layouts/Layout.astro";
                 <div
                     class="inline-flex w-full items-center justify-center flex-wrap gap-2"
                 >
+                    <a
+                        href="/"
+                        class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black dark:text-white transition dark:bg-gray-800 border border-gray-600 focus-visible:ring-slate-500/80 text-md hover:bg-gray-800 dark:hover:border-gray-950 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-1 active:bg-gray-800"
+                    >
+                        <Book class="size-5" />
+                        Portafolio Web
+                    </a>
                     <a
                         href="mailto:cesarahh3@gmail.com"
                         class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black dark:text-white transition dark:bg-gray-800 border border-gray-600 focus-visible:ring-slate-500/80 text-md hover:bg-gray-800 dark:hover:border-gray-950 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-1 active:bg-gray-800"

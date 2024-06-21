@@ -2,26 +2,28 @@
 import "@fontsource-variable/onest";
 interface Props {
 	title: string;
+	description: string;
 }
 
-const page = Astro.url.pathname
+const page = Astro.url.pathname;
 console.log(page);
 
-
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class={`w-full h-full flex flex-col px-3 sm:px-4 ${page === "/social" && "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700"}`}>
+	<body
+		class={`w-full h-full flex flex-col px-3 sm:px-4 ${page === "/social" && "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700"}`}
+	>
 		<slot />
 	</body>
 </html>
