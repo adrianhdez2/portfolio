@@ -137,22 +137,6 @@ export const PROJECTS = [
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
     {
-        title: "Tic Tac Toe",
-        description: "Juego clásico elaborado con JavaScript, con diferentes animaciones en CSS, con infinitas posibilidades de juego, para 2 personas.",
-        link: "https://adrianhdez2.github.io/tictactoe/",
-        github: "https://github.com/adrianhdez2/tictactoe",
-        image: "/img/thumbnails/tic-tac-toe.webp",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    },
-    {
-        title: "Piedra, Papel o Tijeras",
-        description: "Juego clásico elaborado con JavaScript, con el modo de juego vs la máquina.",
-        link: "https://adrianhdez2.github.io/scissors/",
-        github: "https://github.com/adrianhdez2/scissors",
-        image: "/img/thumbnails/r-p-s.webp",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    },
-    {
         title: "Lista con elementos arrastrables",
         description: "Lista de ejemplo para arrastrar y soltar elementos (drag and drog).",
         link: "https://adrianhdez2.github.io/drag/",
@@ -175,19 +159,19 @@ export const PROJECTS = [
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
     },
     {
-        title: "Reloj Digital",
-        description: "Reloj digital que muestra la hora y fecha actuales.",
-        link: "https://adrianhdez2.github.io/Reloj/",
-        github: "https://github.com/adrianhdez2/Reloj",
-        image: "/img/thumbnails/clock.webp",
+        title: "Tic Tac Toe",
+        description: "Juego clásico elaborado con JavaScript, con diferentes animaciones en CSS, con infinitas posibilidades de juego, para 2 personas.",
+        link: "https://adrianhdez2.github.io/tictactoe/",
+        github: "https://github.com/adrianhdez2/tictactoe",
+        image: "/img/thumbnails/tic-tac-toe.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
     {
-        title: "Calculadora",
-        description: "Calculadora básica elaborada con JavaScript, puede realizar operaciones como: suma, resta, multiplicacón y división.",
-        link: "https://adrianhdez2.github.io/calculadora/",
-        github: "https://github.com/adrianhdez2/calculadora",
-        image: "/img/thumbnails/calculadora.webp",
+        title: "Piedra, Papel o Tijeras",
+        description: "Juego clásico elaborado con JavaScript, con el modo de juego vs la máquina.",
+        link: "https://adrianhdez2.github.io/scissors/",
+        github: "https://github.com/adrianhdez2/scissors",
+        image: "/img/thumbnails/r-p-s.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
 ];
@@ -213,16 +197,24 @@ export const EXPERIENCIE = [
         title: "Prestador de Práctica Profesional",
         company: "Universidad Juárez Autonóma de Tabasco",
         description:
-            "Realicé mi práctica profesional durante 6 meses, finalizando en abril de 2024, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear una aplicación de realidad aumentada (RA) como parte del proyecto de la Laguna de las Ilusiones. Además, inicié mi participación en el proyecto de la Casa Universitaria del Cacao y Chocolate.",
+            "Realicé mi práctica profesional durante 6 meses, finalizando en abril de 2024, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear una aplicación de realidad aumentada (RA) utilizando Vuforia Engine en conjunto con Unity. Además, como desarrollador web, utilicé tecnologías como Node.js y Express.",
         link: "https://laguna-ilusiones.ujat.mx/app-ra2.html"
+    },
+    {
+        date: "Mayo 2023",
+        title: "Colaborador en proyecto de la Laguna de las Ilusiones.",
+        company: "Universidad Juárez Autonóma de Tabasco",
+        description: "Colaboré en el desarrollo frontend, donde tuve la oportunidad de participar en la creación de dos juegos web. Para el desarrollo de los juegos, utilicé JavaScript y CSS puro, añadiendo un nivel adicional de dinamismo y atractivo visual a los proyectos.",
+        link: "https://laguna-ilusiones.ujat.mx/"
     },
     {
         date: "Marzo 2023",
         title: "Prestador de Servicio social",
         company: "Universidad Juárez Autonóma de Tabasco",
         description:
-            "Realicé mi servicio social durante 6 meses, finalizando en agosto de 2023, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear dos juegos Web utilizando JavaScript, como parte del proyecto de la Laguna de las Ilusiones.",
+            "Realicé mi servicio social durante 6 meses, finalizando en agosto de 2023, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, reafirmé mis habilidades como desarrollador frontend utilizando frameworks como React JS y Astro, y aporté ideas y consejos a mis compañeros. Además, mis competencias en CSS y JavaScript crecieron significativamente, permitiéndome contribuir de manera más efectiva a los proyectos del laboratorio.",
         link: "https://laguna-ilusiones.ujat.mx/"
+
     },
 ];
 
@@ -250,18 +242,22 @@ export const HREF = [
 export const LINKS = [
     {
         name: "Experiencia",
+        label: "experience",
         path: "#experience",
     },
     {
         name: "Proyectos",
+        label: "projectos",
         path: "#projects",
     },
     {
         name: "Sobre mí",
+        label: "sobre mí",
         path: "#about-me",
     },
     {
         name: "Contacto",
+        label: "contacto",
         path: "mailto:cesarahh3@gmail.com",
     },
 ];
