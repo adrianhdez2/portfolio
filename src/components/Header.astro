@@ -3,7 +3,7 @@ import { LINKS } from "../constans";
 ---
 
 <header
-    class="mx-auto w-full inline-flex h-auto items-center justify-center mt-3 p-0  sm:justify-between sm:p-3 lg:max-w-4xl md:max-w-2xl"
+    class="mx-auto w-full inline-flex h-auto items-center justify-center mt-3 p-0 sm:justify-between sm:p-3 lg:max-w-4xl md:max-w-2xl"
 >
     <img
         src="/img/me.webp"
@@ -14,10 +14,11 @@ import { LINKS } from "../constans";
         class="flex text-sm font-medium rounded-full justify-center items-center"
     >
         {
-            LINKS.map(({ name, path }) => (
+            LINKS.map(({ name, path, label }) => (
                 <a
                     href={path}
-                    class="hover:text-orange-600 dark:hover:text-orange-600 text-black dark:text-white transition relative block px-2 py-2 focus-visible:outline-none"
+                    aria-label={label}
+                    class="hover:text-orange-600 dark:hover:text-orange-600 transition relative block px-2 py-2 focus-visible:outline-none"
                 >
                     {name}
                 </a>
