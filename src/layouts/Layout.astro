@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/onest";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
 	title: string;
 	description: string;
@@ -45,7 +46,9 @@ const {
 
 		<meta name="robots" content="index, follow" />
 		<meta name="googlebot" content="index, follow" />
+
 		<title>{title}</title>
+		<ViewTransitions/>
 	</head>
 	<body
 		class={`w-full h-full flex flex-col px-3 sm:px-4 ${pathname == "/social" || pathname == "/social/" ? "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700" : ""}`}
