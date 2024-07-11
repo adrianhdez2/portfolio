@@ -8,12 +8,14 @@ interface Props {
 }
 
 const { pathname } = Astro.url;
+const canonicalURL = new URL(pathname, Astro.url);
 
 const {
 	title,
 	description,
-	image = "https://adrianhdez.tech/img/me.webp",
+	image = "/img/me.webp",
 } = Astro.props;
+
 ---
 
 <!doctype html>
@@ -24,7 +26,7 @@ const {
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="canonical" href="https://adrianhdez.tech/" />
+		<link rel="canonical" href={canonicalURL} />
 		<meta name="keywords" content="programador, developer, dev, development, app, web " />
 
 		<meta property="og:image" content={new URL(image, Astro.url)} />
