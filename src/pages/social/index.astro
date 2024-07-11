@@ -7,6 +7,7 @@ import Linkedin from "../../components/icons/Linkedin.astro";
 import Equis from "../../components/icons/Equis.astro";
 import Layout from "../../layouts/Layout.astro";
 import Book from "../../components/icons/Book.astro";
+import LinkMedia from "../../components/links/LinkMedia.astro";
 ---
 
 <Layout
@@ -28,24 +29,17 @@ import Book from "../../components/icons/Book.astro";
                     <div
                         class="absolute top-0 left-0 w-full h-full flex items-end justify-center gap-x-3 py-2 px-2"
                     >
-                        <a
-                            href="https://github.com/adrianhdez2"
-                            class="inline-block bg-black p-1.5 rounded-full items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
-                        >
+                        <LinkMedia href="https://github.com/adrianhdez2">
                             <Github class="size-5 fill-white" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/adrianh2/"
-                            class="bg-black p-1.5 rounded-full flex items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
-                        >
+                        </LinkMedia>
+
+                        <LinkMedia href="https://www.linkedin.com/in/adrianh2/">
                             <Linkedin class="size-5 stroke-white stroke-1" />
-                        </a>
-                        <a
-                            href="https://twitter.com/AdrianH_2"
-                            class="bg-black p-1.5 rounded-full flex items-center justify-center border border-transparent active:border-white focus-visible:ring-1 focus-visible:outline-none focus-visible:ring-white active:bg-black hover:border-white transition-colors"
-                        >
+                        </LinkMedia>
+                        
+                        <LinkMedia href="https://twitter.com/AdrianH_2">
                             <Equis class="size-5 fill-white" />
-                        </a>
+                        </LinkMedia>
                     </div>
                 </div>
             </div>
