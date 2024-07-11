@@ -5,7 +5,7 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string;
-	canonical?: string;
+	canonical: string;
 }
 
 const { pathname } = Astro.url;
@@ -15,14 +15,10 @@ const {
 	description,
 	image = "https://adrianhdez.tech/img/me.webp",
 	canonical
-} = Astro.props as Props;
+} = Astro.props;
 
-const determineCanonicalURL = () => {
-	if (Astro.url.host.includes("localhost")) return "http://localhost:4321"
-	return canonical || Astro.url.pathname
-}
 
-const canonicalURL = new URL(determineCanonicalURL(), Astro.site)
+const canonicalURL = new URL(canonical, Astro.url)
 ---
 
 <!doctype html>
