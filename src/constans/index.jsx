@@ -56,7 +56,7 @@ export const TAGS = {
 export const PROJECTS = [
     {
         title: "Web PescArte - UJAT",
-        description: "PescArte, una red itinerante para la conservación sustentable de organismos acuáticos de Tabasco. Página (Single Page Application) para la Universidad Juárez Autonóma de Tabasco. Realizada con Astro y React JS",
+        description: "PescArte, una red itinerante para la conservación sustentable de organismos acuáticos de Tabasco. Página (Single Page Application) para la Universidad Juárez Autonóma de Tabasco. Realizada con Astro y React JS.",
         link: "https://pescarte.ujat.mx/",
         image: "/img/thumbnails/pescarte.webp",
         tags: [
@@ -105,7 +105,7 @@ export const PROJECTS = [
     },
     {
         title: "Buscador de perfiles Github",
-        description: "Buscador de perfiles de GitHub, realizado en JavaScript, utilizando fetch y la API de GitHub",
+        description: "Buscador de perfiles de GitHub, realizado en JavaScript, utilizando fetch y la API de GitHub.",
         link: "https://adrianhdez2.github.io/github-profile/",
         github: "https://github.com/adrianhdez2/github-profile",
         image: "/img/thumbnails/github.webp",
@@ -146,7 +146,7 @@ export const PROJECTS = [
     },
     {
         title: "Memorama (Juego) - UJAT",
-        description: "Juego clásico de memorana, empleando información relacionada a la Laguna de las Ilusiones, permitiendo así divulgación y concientización sobre su cuidado",
+        description: "Juego clásico de memorana, empleando información relacionada a la Laguna de las Ilusiones, permitiendo así divulgación y concientización sobre su cuidado.",
         link: "https://laguna-ilusiones.ujat.mx/memorama-juego/index.html",
         image: "/img/thumbnails/memorama-laguna.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
