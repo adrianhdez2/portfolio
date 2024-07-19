@@ -25,18 +25,21 @@ import { HREF } from "../constans/index";
         class="w-full mt-6 flex flex-row flex-wrap justify-start items-start gap-2"
     >
         {
-            HREF.map((item) => (
-                <a
-                    href={item.path}
-                    rel="noopener noreferrer"
-                    class="inline-flex px-4 py-1 rounded-2xl bg-white/10 hover:bg-black/70 hover:text-white dark:hover:bg-gray-600 items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 hover:border-gray-700 group transition-colors"
-                >
-                    <item.icon
-                        class={`dark:stroke-white/70 stroke-gray-800 ${item.class} group-hover:stroke-white/70`}
-                    />
-                    {item.title}
-                </a>
-            ))
+            HREF.map(
+                (item) =>
+                    item.path && (
+                        <a
+                            href={item.path}
+                            rel="noopener noreferrer"
+                            class="inline-flex px-4 py-1 rounded-2xl bg-white/10 hover:bg-black/70 hover:text-white dark:hover:bg-gray-600 items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 hover:border-gray-700 group transition-colors"
+                        >
+                            <item.icon
+                                class={`dark:stroke-white/70 stroke-gray-800 ${item.class} group-hover:stroke-white/70`}
+                            />
+                            {item.title}
+                        </a>
+                    ),
+            )
         }
     </nav>
 </ContainerSection>
