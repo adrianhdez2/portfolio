@@ -194,7 +194,7 @@ export const EXPERIENCIE = [
     },
     {
         date: "Noviembre 2023",
-        title: "Prestador de Práctica Profesional",
+        title: "Prestador de Prácticas Profesionales",
         company: "Universidad Juárez Autonóma de Tabasco",
         description:
             "Realicé mi práctica profesional durante 6 meses, finalizando en abril de 2024, en el laboratorio de desarrollo de Apps de la División Académica de Ciencias y Tecnologías de la Información. Durante este período, tuve la oportunidad de crear una aplicación de realidad aumentada (RA) utilizando Vuforia Engine en conjunto con Unity. Además, como desarrollador web, utilicé tecnologías como Node.js y Express.",
