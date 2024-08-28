@@ -32,6 +32,11 @@ import { HREF } from "../constans/index";
                             href={item.path}
                             rel="noopener noreferrer"
                             class="inline-flex px-4 py-1 rounded-2xl bg-white/10 hover:bg-black/70 hover:text-white dark:hover:bg-gray-600 items-center justify-center gap-2 border border-gray-300 dark:border-gray-600 hover:border-gray-700 group transition-colors"
+                            download={
+                                item.download
+                                    ? "César Adrián Hdez Hdez - CV"
+                                    : undefined
+                            }
                         >
                             <item.icon
                                 class={`dark:stroke-white/70 stroke-gray-800 ${item.class} group-hover:stroke-white/70`}

@@ -223,18 +223,21 @@ export const HREF = [
         title: "Contáctame",
         class: "size-4",
         path: "mailto:cesarahh3@gmail.com",
+        download: false,
         icon: Email,
     },
     {
         title: "Mi CV",
         class: "size-4",
-        path: "",
+        path: "/download/cesar_adrian_hdez_hdez_cv.pdf",
+        download: true,
         icon: File,
     },
     {
         title: "LinkedIn",
         class: "size-4",
         path: "https://www.linkedin.com/in/adrianh2/",
+        download: false,
         icon: Linkedin,
     },
 ];
