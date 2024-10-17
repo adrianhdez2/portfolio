@@ -229,7 +229,7 @@ export const HREF = [
     {
         title: "Mi CV",
         class: "size-4",
-        path: "/download/cesar_adrian_hdez_hdez_cv.pdf",
+        path: "/download/cv_cesar_adrian_hdez_hdez.pdf",
         download: true,
         icon: File,
     },
