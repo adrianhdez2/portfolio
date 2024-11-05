@@ -14,11 +14,10 @@ const {
 	title,
 	description,
 	image = "https://adrianhdez.tech/img/me.webp",
-	canonical
+	canonical,
 } = Astro.props;
 
-
-const canonicalURL = new URL(canonical, Astro.url)
+const canonicalURL = new URL(canonical, Astro.url);
 ---
 
 <!doctype html>
@@ -30,7 +29,10 @@ const canonicalURL = new URL(canonical, Astro.url)
 		<link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="canonical" href={canonicalURL} />
-		<meta name="keywords" content="programador, developer, dev, development, app, web, adrianhdez, astro, webdev " />
+		<meta
+			name="keywords"
+			content="programador, developer, dev, development, app, web, adrianhdez, astro, webdev "
+		/>
 
 		<meta property="og:image" content={new URL(image, Astro.url)} />
 		<meta property="og:title" content={title} />
@@ -53,7 +55,7 @@ const canonicalURL = new URL(canonical, Astro.url)
 		<meta name="googlebot" content="index, follow" />
 
 		<title>{title}</title>
-		<ViewTransitions/>
+		<ViewTransitions />
 	</head>
 	<body
 		class={`w-full h-full flex flex-col px-3 sm:px-4 ${pathname == "/social" || pathname == "/social/" ? "bg-gradient-to-l from-slate-300 to-slate-500 dark:bg-gradient-to-l dark:from-slate-900 dark:to-slate-700" : ""}`}

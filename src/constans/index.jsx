@@ -55,6 +55,19 @@ export const TAGS = {
 
 export const PROJECTS = [
     {
+        title: 'Choco Market - Ecommerce',
+        description: 'E-commerce para artesanías de tabasco. Sitio moderno e intuitivo realizado con React JS.',
+        link: 'https://choco-market.vercel.app/',
+        github: 'https://github.com/adrianhdez2/choco-market',
+        image: '/img/thumbnails/choco-market.webp',
+        tags: [
+            TAGS.HTML,
+            TAGS.CSS,
+            TAGS.JAVASCRIPT,
+            TAGS.REACT
+        ]
+    },
+    {
         title: "Web PescArte - UJAT",
         description: "PescArte, una red itinerante para la conservación sustentable de organismos acuáticos de Tabasco. Página (Single Page Application) para la Universidad Juárez Autonóma de Tabasco. Realizada con Astro y React JS.",
         link: "https://pescarte.ujat.mx/",
@@ -98,7 +111,6 @@ export const PROJECTS = [
     {
         title: "E-commerce Veterinaria",
         description: "Diseño UI para un ecommerce de una veterinaria, el diseño se realizó con Bootstrap y para su funcionamiento PHP y MySQL.",
-        // link: "https://veterinarialvl.000webhostapp.com/",
         github: "https://github.com/adrianhdez2/veterinaria",
         image: "/img/thumbnails/veterinaria.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.PHP],
@@ -164,14 +176,6 @@ export const PROJECTS = [
         link: "https://adrianhdez2.github.io/tictactoe/",
         github: "https://github.com/adrianhdez2/tictactoe",
         image: "/img/thumbnails/tic-tac-toe.webp",
-        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
-    },
-    {
-        title: "Piedra, Papel o Tijeras",
-        description: "Juego clásico elaborado con JavaScript, con el modo de juego vs la máquina.",
-        link: "https://adrianhdez2.github.io/scissors/",
-        github: "https://github.com/adrianhdez2/scissors",
-        image: "/img/thumbnails/r-p-s.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
 ];
