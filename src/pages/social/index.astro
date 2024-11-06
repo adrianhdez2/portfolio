@@ -1,13 +1,13 @@
 ---
-import ContainerSection from "../../components/ContainerSection.astro";
-import Email from "../../components/icons/Email.astro";
-import File from "../../components/icons/File.astro";
-import Github from "../../components/icons/Github.astro";
-import Linkedin from "../../components/icons/Linkedin.astro";
-import Equis from "../../components/icons/Equis.astro";
-import Layout from "../../layouts/Layout.astro";
-import Book from "../../components/icons/Book.astro";
-import LinkMedia from "../../components/links/LinkMedia.astro";
+import ContainerSection from "@components/ContainerSection.astro";
+import Email from "@components/icons/Email.astro";
+import FileIcon from "@components/icons/FileIcon.astro";
+import Github from "@components/icons/Github.astro";
+import Linkedin from "@components/icons/Linkedin.astro";
+import Equis from "@components/icons/Equis.astro";
+import Layout from "@layouts/Layout.astro";
+import Book from "@components/icons/Book.astro";
+import LinkMedia from "@components/links/LinkMedia.astro";
 ---
 
 <Layout
@@ -36,7 +36,7 @@ import LinkMedia from "../../components/links/LinkMedia.astro";
                         <LinkMedia href="https://www.linkedin.com/in/adrianh2/">
                             <Linkedin class="size-5 stroke-white stroke-1" />
                         </LinkMedia>
-                        
+
                         <LinkMedia href="https://twitter.com/AdrianH_2">
                             <Equis class="size-5 fill-white" />
                         </LinkMedia>
@@ -86,13 +86,14 @@ import LinkMedia from "../../components/links/LinkMedia.astro";
                         <Email class="size-5" />
                         Contáctame
                     </a>
-                    <!-- <a
-                        href=""
+                    <a
+                        href="/download/cv_cesar_adrian_hdez_hdez.pdf"
+                        download
                         class="inline-flex items-center justify-center gap-2 px-3 py-2 space-x-2 text-base text-black dark:text-white transition dark:bg-gray-800 border border-gray-600 focus-visible:ring-slate-500/80 text-md hover:bg-gray-800 dark:hover:border-gray-950 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-1 active:bg-gray-800"
                     >
-                        <File class="size-5" />
+                        <FileIcon class="size-5" />
                         Descargar CV</a
-                    > -->
+                    >
                 </div>
             </div>
         </article>
