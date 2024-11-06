@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     },
     {
         title: "Casa Universitaria Cacao y Chocolate",
-        description: 'Colaboración para el desarrollo de una sección en esta página, utiliando HTML, CSS y JavaScript.',
+        description: 'Colaboración para el desarrollo de una sección en esta página, utilizando HTML, CSS y JavaScript.',
         link: 'https://casa-cacao.ujat.mx/',
         image: '/img/thumbnails/cacha-cacao.webp',
         tags: [
