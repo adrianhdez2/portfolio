@@ -130,7 +130,7 @@ export const PROJECTS: Project[] = [
     },
     {
         title: "Memorama (Juego) - UJAT",
-        description: "Juego clásico de memorana, empleando información relacionada a la Laguna de las Ilusiones, permitiendo así divulgación y concientización sobre su cuidado.",
+        description: "Juego clásico de memorama, empleando información relacionada a la Laguna de las Ilusiones, permitiendo así divulgación y concientización sobre su cuidado.",
         link: "https://laguna-ilusiones.ujat.mx/memorama-juego/index.html",
         image: "/img/thumbnails/memorama-laguna.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT]
